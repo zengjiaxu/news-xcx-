@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class='container'>
+  <image src='/images/lol.jpg'></image>
+  <text class='txt'>Hello</text>
+  <view class="btn">
+    <text>开启联盟之旅</text>
+  </view>
+</view>
