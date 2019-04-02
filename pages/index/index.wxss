@@ -1,6 +1,7 @@
 /**index.wxss**/
 page{
   height: 100%;
+  background: #02CAAC;
 }
 .container{
   display: flex;

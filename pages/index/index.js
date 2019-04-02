@@ -50,5 +50,10 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  toIndex(){
+    wx.redirectTo({
+      url: '../logs/logs',
+    })
   }
 })

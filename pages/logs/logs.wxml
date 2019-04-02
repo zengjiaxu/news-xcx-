@@ -1,6 +1,26 @@
-<!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<view>
+  <view wx:for="{{detailInfo}}"  class='list' bindtap='toDetails' data-id='{{item.id}}'>
+    <view class='title'>
+    <text>{{item.title}}</text>
+    <text class='hours'>{{item.hourBefore}}</text>
+    </view>
+    <view class='imgBox'>
+      <image src='{{item.imgUrl}}'></image>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='titleV'>
+      <text>标题</text>
+    </view>
+      <video></video>
+    </view>
+    <view class='list'>
+      <view class='titleV'>
+        <text>标题</text>
+      </view>
+        <view class='doubleImg'>
+        <view><image src='/images/lol.jpg'></image></view>
+        <view><image src='/images/lol.jpg'></image></view>
+        </view>
+    </view>
 </view>

@@ -1,0 +1,48 @@
+.detailContainer{
+  margin: 10rpx;
+}
+.title{
+  font-weight: bolder
+}
+.webHours{
+ margin-top: 30rpx 
+}
+.whichWeb{
+  font-size: 30rpx;
+}
+.hours{
+  font-size: 30rpx;
+  color:#ccc;
+}
+.context{
+  font-size: 30rpx;
+  font-family: '宋体'
+}
+.views{
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  color:#ccc;
+}
+.comment{
+  margin-top: 150rpx;
+  font-size: 30rpx;
+  padding-left: 10rpx;
+  border-left: 4px solid red
+}
+.commentDetail{
+  width: 100%;
+  word-wrap:break-word;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  font-family: '宋体';
+  margin-top: 20rpx;
+  border-bottom:1px solid #ddd;
+}
+.timer{
+  overflow: hidden
+}
+.time{
+  color:#ccc;
+   font-size: 25rpx;
+   float:right;
+}

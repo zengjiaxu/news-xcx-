@@ -1,0 +1,30 @@
+<view class='detailContainer'>
+  <view class='title'>
+    <text>{{details.title}}</text>
+  </view>
+  <view class='webHours'>
+    <view>
+      <text class="whichWeb">{{details.whichWeb}}</text>
+    </view>
+    <view>
+      <text class="hours">{{details.hours}}</text>
+    </view>
+  </view>
+  <view class='context'>
+  <text>
+     {{details.context}}
+  </text>
+  </view>
+  <view class="views">
+    <text>{{details.views}}</text>
+  </view>
+  <view class='comment'>
+  <text>最新评论</text>
+  </view>
+  <view class='commentDetail' wx:for="{{details.comment}}" wx:for-item="i"  wx:key="index">
+  <text>{{i.detail}}</text>
+  <view class='timer'>
+    <text class='time'>{{i.time}}</text>
+  </view>
+  </view>
+</view>
