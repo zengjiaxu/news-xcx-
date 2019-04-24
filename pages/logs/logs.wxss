@@ -6,7 +6,7 @@
   margin: 10rpx;
   overflow: hidden;
 }
-.list>.titleV{
+.list>.title{
   line-height: 50rpx;
 }
 .list>video{

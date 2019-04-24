@@ -1,0 +1,26 @@
+<!--pages/mine/my.wxml-->
+<view class='userInfo'>
+  <view class='img1'>
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class='userFont'>
+    <view>
+      <open-data type="userNickName" open-gid="xxxxxx"></open-data>
+    </view>
+    <view class='sex'>
+      <open-data type="userGender" lang="zh_CN"></open-data>
+    </view>
+  </view>
+</view>
+<view class="shoucang">
+  <text>收藏</text>
+</view>
+  <view wx:for="{{dataListSC}}"  class='listSC' bindtap='toDetails' data-id='{{item.id}}'>
+    <view class='title'>
+    <text>{{item.title}}</text>
+    <text class='hours'>{{item.hourBefore}}</text>
+    </view>
+    <view class='imgBox'>
+      <image src='{{item.imgUrl}}'></image>
+    </view>
+  </view>

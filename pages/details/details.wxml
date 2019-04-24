@@ -28,3 +28,12 @@
   </view>
   </view>
 </view>
+<view class='footBar'>
+  <view><text class='iconfont icon-huifu' bindtap='handleComment'></text></view>
+  <view class="{{isClk==1?'ZanClick':''}}"><text class='iconfont icon-tubiaozhizuomoban'  bindtap='handleZan'></text></view>
+  <view>
+    <text class='iconfont icon-aixinD' hidden='{{haveClick}}' bindtap='handleSCN'></text>
+    <text class='iconfont icon-aixin' hidden='{{!haveClick}}' bindtap='handleSCY'></text>
+  </view>
+  <view><text class='iconfont icon-weixin' bindtap='handleWX'></text></view>
+</view>

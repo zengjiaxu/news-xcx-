@@ -5,6 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    haveClick:false,
+    isClk:1
   },
 
   /**
@@ -12,7 +14,14 @@ Page({
    */
   onLoad: function (options) {
     let id = options.id
-    console.log(local_data+'sss'+id)
+    let dataArr = local_data.postList
+    dataArr.forEach((item,index)=>{
+        if(~~item.id === ~~id){
+          this.setData({
+            details: JSON.parse(JSON.stringify(item))
+          }) 
+        }
+    })
   },
 
   /**
@@ -60,6 +69,28 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
+    
+  },
+  handleSCN () {
+    this.setData({
+      haveClick: true
+    })
+  },
+  handleSCY () {
+    this.setData({
+      haveClick : false
+    })
+  },
+  handleZan () {
+    if(this.data.isClk === 1){
+      this.setData({
+        isClk: 0
+      })
+    }else{
+      this.setData({
+        isClk: 1
+      })
+    }
     
   }
 })
