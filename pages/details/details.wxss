@@ -1,7 +1,9 @@
 @import "/style/iconfont.wxss";
+scroll-view{
+  height:90vh;
+}
 .detailContainer{
   margin: 10rpx;
-  margin-bottom: 120rpx;
 }
 .title{
   font-weight: bolder
@@ -74,4 +76,16 @@
 
 .ZanClick{
   color: #FFD700
+}
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+button{
+  background: none;
+  line-height: 100rpx;
+}
+button::after{
+  border: none;
 }

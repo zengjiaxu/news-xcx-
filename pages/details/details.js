@@ -6,7 +6,8 @@ Page({
    */
   data: {
     haveClick:false,
-    isClk:1
+    isClk:0,
+    whichId:''
   },
 
   /**
@@ -92,5 +93,26 @@ Page({
       })
     }
     
+  },
+  handleComment() { 
+    
+    this.setData({
+      whichId:'scrollTopCom'
+    })
+    console.log(this.data.whichId)
+  },
+  handleWX () {
+
+  },
+  onShareAppMessage(res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '看下新闻好吗',
+      path: '/pages/index/index',
+      imageUrl:'/images/lol.jpg'
+    }
   }
 })

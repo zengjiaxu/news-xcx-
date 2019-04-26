@@ -52,7 +52,7 @@ Page({
     })
   },
   toIndex(){
-    wx.redirectTo({
+    wx.switchTab({
       url: '../logs/logs',
     })
   }

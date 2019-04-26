@@ -1,3 +1,4 @@
+<scroll-view scroll-y scroll-into-view="{{whichId}}" scroll-with-animation="true">
 <view class='detailContainer'>
   <view class='title'>
     <text>{{details.title}}</text>
@@ -18,7 +19,7 @@
   <view class="views">
     <text>{{details.views}}</text>
   </view>
-  <view class='comment'>
+  <view class='comment' id='scrollTopCom'>
   <text>最新评论</text>
   </view>
   <view class='commentDetail' wx:for="{{details.comment}}" wx:for-item="i"  wx:key="index">
@@ -27,7 +28,8 @@
     <text class='time'>{{i.time}}</text>
   </view>
   </view>
-</view>
+ </view>
+</scroll-view>
 <view class='footBar'>
   <view><text class='iconfont icon-huifu' bindtap='handleComment'></text></view>
   <view class="{{isClk==1?'ZanClick':''}}"><text class='iconfont icon-tubiaozhizuomoban'  bindtap='handleZan'></text></view>
@@ -35,5 +37,5 @@
     <text class='iconfont icon-aixinD' hidden='{{haveClick}}' bindtap='handleSCN'></text>
     <text class='iconfont icon-aixin' hidden='{{!haveClick}}' bindtap='handleSCY'></text>
   </view>
-  <view><text class='iconfont icon-weixin' bindtap='handleWX'></text></view>
+  <view> <button open-type='share'hover-class="none"><text class='iconfont icon-weixin' bindtap='handleWX'></text></button></view>
 </view>
